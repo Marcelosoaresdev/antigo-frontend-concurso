@@ -1,0 +1,342 @@
+/* === Vitis Souls - Estilo Moderno e Minimalista com Comentários === */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+/* Reset e base tipográfica */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+}
+
+.highlight {
+  background-color: #f4eafa;
+  padding: 0.1rem 0.25rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #222;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background: #69247c;
+  left: 0;
+  bottom: -10px;
+  border-radius: 1px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+p,
+li {
+  font-size: 1.05rem;
+  color: #444;
+}
+
+ul {
+  margin-left: 1.5rem;
+  list-style: square;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+.hero {
+  background: url("assets/imgs/1905x331.png") no-repeat center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  color: #fff;
+}
+
+.quick-nav {
+  padding: 1rem 0 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  opacity: 0.85;
+}
+
+.nav-list {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem 1rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.nav-list li a {
+  color: #888;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  display: block;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-list li a:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.section {
+  padding: 4rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  animation: fadeInUp 1s ease both;
+}
+
+form {
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  border-color: #7b91c7;
+  outline: none;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background-color: #7b91c7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+form button:hover:not(:disabled) {
+  background-color: #5c72aa;
+}
+
+footer img {
+  max-width: 100px;
+  margin: 1rem auto;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  color: #ccc;
+  padding: 3rem 0 2rem;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 4rem;
+  padding: 0 1rem;
+}
+
+.footer-column {
+  margin: 0 auto;
+}
+
+.footer-column h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column a {
+  color: #ccc;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 0px;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  color: #777;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  color: white;
+  fill: white;
+}
+
+#duvidas a {
+  color: #69247c;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("assets/imgs/430x392px.png");
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    padding: 1.5rem 0;
+  }
+
+  .nav-list {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.4rem 0.8rem;
+    margin: 0 auto;
+  }
+
+  .nav-list li a {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  ul {
+    list-style: square;
+    margin-bottom: 1rem;
+  }
+
+  .footer-container {
+    gap: 1rem;
+  }
+}
+
+#sobre h2::before {
+  content: "";
+  background-image: url("https://unpkg.com/feather-icons/dist/icons/info.svg");
+}
+
+#inscricao h2::before {
+  content: "";
+  background-image: url("https://unpkg.com/feather-icons/dist/icons/file-text.svg");
+}
+
+#marca h2::before {
+  content: "";
+  background-image: url("https://unpkg.com/feather-icons/dist/icons/users.svg");
+}
+
+#objetivo h2::before {
+  content: "";
+  background-image: url("https://unpkg.com/feather-icons/dist/icons/target.svg");
+}
+
+#resultado h2::before {
+  content: "";
+  background-image: url("https://unpkg.com/feather-icons/dist/icons/award.svg");
+}
+
+#duvidas h2::before {
+  content: "";
+  background-image: url("https://unpkg.com/feather-icons/dist/icons/help-circle.svg");
+}
