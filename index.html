@@ -18,6 +18,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    
     <header class="hero">
       <div class="container">
         <h1>Competição Vitis Souls</h1>
@@ -60,8 +61,44 @@
         <p>
           <strong>Premiação:</strong>
           <span class="highlight">R$ 1.000,00</span> para o vencedor de cada
-          categoria
+          categoria.
         </p>
+      </section>
+
+      <section id="categorias" class="section" data-aos="fade-up">
+        <h2><i data-feather="layers"></i> Categorias da Competição</h2>
+        <div class="categorias-cards">
+          <!-- Card Reels -->
+          <div class="categoria-card" onclick="abrirModal('reels')">
+            <h3><i data-feather="video"></i><span>Reels</span></h3>
+            <p>
+              Vídeo curto com narrativa emocional para divulgação dos
+              minicursos.
+            </p>
+          </div>
+
+          <!-- Card Pitch -->
+          <div class="categoria-card" onclick="abrirModal('pitch')">
+            <h3><i data-feather="mic"></i><span>Pitch</span></h3>
+            <p>Proposta criativa de venda em formato de vídeo argumentativo.</p>
+          </div>
+
+          <!-- Card Designer -->
+          <div class="categoria-card" onclick="abrirModal('designer')">
+            <h3><i data-feather="image"></i><span>Designer</span></h3>
+            <p>
+              Peça visual com foco em conexão emocional e identidade da marca.
+            </p>
+          </div>
+        </div>
+
+        <!-- Modal base -->
+        <div id="modal-categoria" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <div id="modal-texto"></div>
+          </div>
+        </div>
       </section>
 
       <section id="inscricao" class="section" data-aos="fade-up">
@@ -92,6 +129,44 @@
             Pagar com Mercado Pago
           </button>
         </form>
+        <div class="dropdown-termos">
+          <button class="dropdown-btn" onclick="toggleDropdown(this)">
+            <span class="icon">▶</span> Termos e Condições
+          </button>
+          <div id="dropdown-conteudo" class="dropdown-content">
+            <h4>
+              <i data-feather="image"></i> Direitos de Uso de Imagem e Conteúdo
+            </h4>
+            <p>
+              Ao se inscrever na Competição Vitis Souls, o participante autoriza
+              automaticamente o uso de sua imagem, voz e material inscrito (seja
+              vídeo, arte, texto ou pitch de vendas) pela marca Vitis Souls para
+              fins promocionais e institucionais. Esse uso poderá ocorrer em
+              plataformas digitais, eventos físicos, apresentações ou materiais
+              de divulgação, sempre sem fins lucrativos e respeitando os devidos
+              créditos autorais.
+            </p>
+
+            <h4><i data-feather="edit-2"></i> Declaração de autoria</h4>
+            <p>
+              O participante declara que o conteúdo inscrito é de sua total
+              autoria, isentando a organização de qualquer responsabilidade por
+              possíveis infrações relacionadas a direitos autorais, uso de
+              imagem ou reprodução indevida de conteúdo de terceiros.
+            </p>
+
+            <h4><i data-feather="award"></i> Critério de Desempate</h4>
+            <p>
+              Em caso de empate técnico ou numérico entre dois ou mais
+              participantes — considerando visualizações, curtidas, comentários
+              e compartilhamentos —, o critério de desempate será o alinhamento
+              mais sensível, criativo e verdadeiro com os valores da marca. A
+              decisão será feita por uma banca avaliadora interna da Vitis
+              Souls, levando em conta aspectos emocionais, autenticidade e
+              impacto do conteúdo.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="marca" class="section" data-aos="fade-up">

@@ -137,6 +137,100 @@ a {
   animation: fadeInUp 1s ease both;
 }
 
+.categorias-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.categoria-card {
+  background: #f4f4f4;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.categoria-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  border-color: #69247c;
+}
+
+.categoria-card:active {
+  transform: scale(0.97);
+}
+
+.categoria-card h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.categoria-card h3 i {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+  position: relative;
+}
+
+.modal .close {
+  color: #999;
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal .close:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 form {
   background: #f3f4f6;
   padding: 20px;
@@ -189,6 +283,76 @@ form button:disabled {
 form button:hover:not(:disabled) {
   background-color: #5c72aa;
 }
+/* Estilo do dropdown */
+.dropdown-termos {
+  margin-top: 2rem;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: #69247c;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+  width: 100%;
+}
+
+.dropdown-btn .icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-btn.open .icon {
+  transform: rotate(90deg);
+}
+
+.dropdown-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+  background-color: #f9f9f9;
+  border-left: 3px solid #69247c;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  padding: 0 1rem;
+}
+
+.dropdown-content.show {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 1rem;
+}
+
+/* Títulos com ícones */
+.dropdown-content h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.dropdown-content h4 i {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+  flex-shrink: 0;
+}
 
 footer img {
   max-width: 100px;
@@ -209,6 +373,21 @@ footer img {
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 4rem;
   padding: 0 1rem;
+}
+
+.footer-inline-termos {
+  flex: 1 1 100%;
+  font-size: 0.7rem;
+  color: #888;
+  line-height: 1.4;
+  margin-top: 1rem;
+  max-width: 100%;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.footer-inline-termos p {
+  margin-bottom: 0.4rem;
 }
 
 .footer-column {
@@ -278,6 +457,10 @@ footer img {
     background-image: url("/assets/imgs/430x392px.png");
   }
 
+  .section {
+    padding: 3rem 0;
+  }
+
   h1 {
     font-size: 2.2rem;
   }
@@ -304,6 +487,46 @@ footer img {
   ul {
     list-style: square;
     margin-bottom: 1rem;
+  }
+
+  .dropdown-btn {
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  .dropdown-content {
+    font-size: 0.88rem;
+    padding: 0.8rem;
+  }
+
+  .dropdown-content h4 {
+    font-size: 0.88rem;
+  }
+
+  .dropdown-content p {
+    font-size: 0.85rem;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 95vw;
+    max-height: 80vh;
+    padding: 1.5rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .modal .close {
+    top: 0.5rem;
+    right: 0.75rem;
+    font-size: 1.25rem;
+  }
+
+  .modal-content ul {
+    padding-left: 1.2rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.1rem;
   }
 
   .footer-container {
