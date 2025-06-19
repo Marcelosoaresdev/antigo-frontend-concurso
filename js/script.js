@@ -76,30 +76,8 @@ document.addEventListener("click", function (event) {
 document.addEventListener("DOMContentLoaded", () => {
   const submitBtn = document.getElementById("submit-btn");
 
-  submitBtn?.addEventListener("click", async function () {
-    try {
-      const response = await fetch(
-        "https://backend-concurso.onrender.com/create-preference",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ origem: "site" }), // Pode ser qualquer coisa simples
-        }
-      );
-
-      const data = await response.json();
-
-      if (data.init_point) {
-        window.location.href = data.init_point;
-      } else {
-        alert("Erro ao iniciar pagamento");
-        console.log(data);
-      }
-    } catch (error) {
-      alert("Erro na conexão com o servidor");
-      console.error(error);
-    }
+  submitBtn?.addEventListener("click", function () {
+    // Redireciona direto para o backend que faz o redirect seguro
+    window.location.href = "https://backend-concurso.onrender.com/redirect-to-checkout";
   });
 });
