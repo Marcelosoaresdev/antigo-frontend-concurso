@@ -18,7 +18,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    
     <header class="hero">
       <div class="container">
         <h1>Competição Vitis Souls</h1>
@@ -34,11 +33,13 @@
           <li><a href="#inscricao">Taxas e Regras</a></li>
           <li><a href="#marca">Sobre a Vitis Souls</a></li>
           <li><a href="#objetivo">Objetivo dos Conteúdos</a></li>
-          <li><a href="#formatos">Dicas por Formato</a></li>
-          <li><a href="#avaliacao">Critérios de Avaliação</a></li>
-          <li><a href="#desempate">Critério de Desempate</a></li>
-          <li><a href="#direitos">Direitos de Uso de Imagem</a></li>
-          <li><a href="#resultado">Divulgação dos Resultados</a></li>
+          <li><a href="#categorias">Categorias da Competição</a></li>
+          <li><a href="#regras">Regras Gerais</a></li>
+          <li><a href="#lembrar">O que Lembrar</a></li>
+          <li><a href="#info-competicao">Desclassificação</a></li>
+          <li><a href="#info-competicao">Critérios de Avaliação</a></li>
+          <li><a href="#info-competicao">Divulgação dos Resultados</a></li>
+          <li><a href="#info-competicao">Importante</a></li>
           <li><a href="#duvidas">Dúvidas e Contato</a></li>
         </ul>
       </div>
@@ -49,18 +50,18 @@
           <strong>A Competição Vitis Souls</strong> é uma iniciativa criada para
           <strong>revelar e valorizar o talento</strong> de estudantes e
           criativos em três áreas fundamentais da comunicação:
-          <span class="highlight">Reels</span>,
-          <span class="highlight">Pitch de Vendas</span> e
-          <span class="highlight">Design</span>.
+          <span class="">Reels</span>,
+          <span class="">Pitch de Vendas</span> e
+          <span class="">Design</span>.
         </p>
         <p>
-          <strong>Categorias:</strong> <span class="highlight">Reels</span> -
-          <span class="highlight">Pitch de Vendas</span> -
-          <span class="highlight">Designer</span>
+          <strong>Categorias:</strong> <span class="">Reels</span> -
+          <span class="">Pitch de Vendas</span> -
+          <span class="">Designer</span>
         </p>
         <p>
           <strong>Premiação:</strong>
-          <span class="highlight">R$ 1.000,00</span> para o vencedor de cada
+          <span class="">R$ 1.000,00</span> para o vencedor de cada
           categoria.
         </p>
       </section>
@@ -105,30 +106,29 @@
         <h2><i data-feather="dollar-sign"></i> Taxa de Inscrição</h2>
         <p>
           <strong>Estudantes universitários:</strong>
-          <span class="highlight">R$ 15,00</span> (com matrícula)
+          <span class="">R$ 15,00</span> (com matrícula)
         </p>
         <p>
           <strong>Demais participantes:</strong>
-          <span class="highlight">R$ 20,00</span>
+          <span class="">R$ 20,00</span>
         </p>
         <p>
           <strong>O pagamento deve ser feito no ato da inscrição</strong> e o
           comprovante anexado ao formulário.
         </p>
-        <form id="checkout-form">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required /><br />
+        <div>
+          <h3>IMPORTANTE!</h3>
+          <p>
+            Após o pagamento, você será redirecionado para um formulário do
+            Google. É
+          </p>
+          <strong>obrigatório preenchê-lo</strong> com seus dados e comprovante
+          para validar sua inscrição.
+        </div>
+        <button type="submit" id="submit-btn" disabled>
+          Pagar com Mercado Pago
+        </button>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
-
-          <label for="telefone">Telefone:</label>
-          <input type="tel" id="telefone" name="telefone" required /><br />
-
-          <button type="submit" id="submit-btn" disabled>
-            Pagar com Mercado Pago
-          </button>
-        </form>
         <div class="dropdown-termos">
           <button class="dropdown-btn" onclick="toggleDropdown(this)">
             <span class="icon">▶</span> Termos e Condições
@@ -169,45 +169,204 @@
         </div>
       </section>
 
-      <section id="marca" class="section" data-aos="fade-up">
-        <h2><i data-feather="users"></i> Sobre a Vitis Souls</h2>
-        <p>
-          A <strong>Vitis Souls</strong> é um
-          <strong>movimento de transformação</strong> criado por Flávia
-          Cavalcante, que atua com sensibilidade e verdade nos pilares
-          <span class="highlight">espiritual</span>,
-          <span class="highlight">emocional</span>,
-          <span class="highlight">físico</span> e
-          <span class="highlight">financeiro</span>.
-        </p>
+      <!-- NOVA SECAO: REGRAS GERAIS -->
+      <section id="regras" class="section" data-aos="fade-up">
+        <h2><i data-feather="book-open"></i> Regras Gerais</h2>
+        <ul>
+          <li>
+            A inscrição é individual (porém podendo conter mais participantes).
+          </li>
+          <li>
+            Cada participante pode se inscrever em quantas categorias desejar
+            (cada categoria precisa de uma inscrição separada).
+          </li>
+          <li>Inscrição obrigatória por meio do formulário.</li>
+          <li>
+            Após confirmação do pagamento, o participante receberá por e-mail um
+            kit de materiais oficiais da Vitis Souls para uso na produção do
+            conteúdo (esse material é de uso obrigatório).
+          </li>
+          <li>Idade mínima: 18 anos.</li>
+          <li>
+            <strong>Prazo final para inscrição e envio dos materiais:</strong>
+            <em>25/07/2025</em>.
+          </li>
+        </ul>
       </section>
 
       <section id="objetivo" class="section" data-aos="fade-up">
-        <h2><i data-feather="target"></i> Objetivo dos Conteúdos</h2>
+        <h2>
+          <i data-feather="target"></i> Objetivo dos Conteúdos da Competição
+        </h2>
+
         <p>
-          Traduzir a essência da Vitis Souls em um conteúdo
-          <strong>criativo, emocional e verdadeiro</strong>, que provoque
-          <span class="highlight">identificação</span>,
-          <span class="highlight">esperança</span> e
-          <span class="highlight">vontade de recomeçar</span>.
+          Seu desafio, como participante da
+          <strong>Competição Universitária Vitis Souls</strong>, é traduzir tudo
+          isso — o propósito, a essência e o impacto real da marca — em um
+          conteúdo <strong>criativo, emocional e verdadeiro</strong>.
+        </p>
+
+        <h3>Você pode escolher entre três formatos:</h3>
+        <ul>
+          <li><strong>Reel:</strong> vídeo curto</li>
+          <li><strong>Pitch:</strong> proposta de venda estruturada</li>
+          <li><strong>Design:</strong> peça visual gráfica</li>
+        </ul>
+
+        <p>
+          Independentemente da categoria, o mais importante é que o conteúdo
+          <strong>comunique com verdade</strong>.
+        </p>
+
+        <p>
+          Você está falando com alguém como você:
+          <em
+            >uma pessoa que vive a correria do dia a dia, se sente cansada,
+            perdida, mas que deseja reencontrar direção, sentido e leveza</em
+          >.
+        </p>
+
+        <p>
+          A proposta da Vitis não é oferecer soluções mágicas. É abrir um espaço
+          real para <strong>reflexão, coragem, acolhimento e ação</strong>.
+        </p>
+
+        <p>
+          Por isso, seu conteúdo precisa <strong>tocar</strong> quem assiste, lê
+          ou ouve. Precisa provocar
+          <strong>identificação, esperança e vontade de recomeçar</strong>.
         </p>
       </section>
 
-      <section id="resultado" class="section" data-aos="fade-up">
-        <h2><i data-feather="award"></i> Divulgação dos Resultados</h2>
+      <section id="info-competicao" class="section" data-aos="fade-up">
+        <h2><i data-feather="info"></i> Informações Finais</h2>
+
+        <div class="info-grid">
+          <!-- Desclassificação -->
+          <div class="info-card">
+            <h3><i data-feather="alert-triangle"></i> Desclassificação</h3>
+            <ul>
+              <li>Envio de material fora do prazo ou formato inválido.</li>
+              <li>Conteúdo ofensivo, discriminatório ou violento.</li>
+              <li>Uso de material com direitos autorais sem permissão.</li>
+              <li>Uso de marcas ou logos de terceiros.</li>
+              <li>Descumprimento das regras de inscrição.</li>
+            </ul>
+          </div>
+
+          <!-- Avaliação -->
+          <div class="info-card">
+            <h3><i data-feather="check-circle"></i> Critérios de Avaliação</h3>
+            <p><strong>1. Desempenho nas redes sociais:</strong></p>
+            <ul>
+              <li>Perfil público.</li>
+              <li>Marcar @vitissouls e usar #vitissouls.</li>
+              <li>
+                Métricas: visualizações, curtidas, compartilhamentos,
+                comentários.
+              </li>
+              <li>É permitido tráfego pago.</li>
+            </ul>
+            <p><strong>2. Criatividade e técnica:</strong></p>
+            <ul>
+              <li>Originalidade e sensibilidade.</li>
+              <li>Qualidade visual e sonora.</li>
+              <li>Alinhamento com os valores da Vitis.</li>
+            </ul>
+          </div>
+
+          <!-- Divulgação dos Resultados -->
+          <div class="info-card">
+            <h3><i data-feather="award"></i> Divulgação dos Resultados</h3>
+            <p>
+              Os vencedores serão anunciados nos dias
+              <strong>02 e 03/07/2025</strong> durante a Expo VR. A divulgação
+              ocorrerá na palestra principal.
+            </p>
+            <p>
+              <strong>É obrigatório estar presente</strong> para receber a
+              premiação. Em caso de ausência, o prêmio será transferido ao 2º
+              colocado.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-card full-width">
+          <h3><i data-feather="star"></i> Importante</h3>
+          <p>
+            Mesmo que você esteja participando de outras categorias (Pitch ou
+            Designer), o conteúdo publicado nas redes sociais ainda pode
+            funcionar como uma vitrine do seu talento e ampliar suas chances.
+          </p>
+          <p>
+            Use a criatividade e, principalmente, seja fiel à essência da marca:
+            despertar, acolher e inspirar.
+          </p>
+        </div>
+      </section>
+
+      <section id="marca" class="section" data-aos="fade-up">
+        <h2><i data-feather="users"></i> O que é a Vitis Souls?</h2>
+
         <p>
-          <strong>Os vencedores serão anunciados</strong> nos dias
-          <span class="highlight">02 e 03/08/2025</span> na Expo VR. O vencedor
-          <strong>precisa estar presente</strong> para receber o prêmio.
+          A <strong>Vitis Souls</strong> não é apenas uma marca, é um
+          <strong>movimento de transformação</strong>. Criada por Flávia
+          Cavalcante, autora, psicóloga e terapeuta, a Vitis nasceu da coragem
+          de transformar dores pessoais em um projeto coletivo de
+          autoconhecimento e reencontro com o sentido da vida.
+        </p>
+
+        <p>
+          É uma marca que fala com <strong>pessoas reais</strong>, que se sentem
+          perdidas, sobrecarregadas, vivendo no automático — mas que ainda
+          desejam recomeçar de forma mais leve, verdadeira e profunda.
+        </p>
+
+        <h3>Pilares da Vitis Souls</h3>
+        <ul>
+          <li><strong>Espiritual</strong></li>
+          <li><strong>Emocional</strong></li>
+          <li><strong>Físico</strong></li>
+          <li><strong>Financeiro</strong></li>
+        </ul>
+
+        <p>
+          Tudo na Vitis é feito com <strong>sensibilidade</strong>,
+          <strong>verdade</strong> e um cuidado que se traduz numa comunicação
+          <em>acolhedora</em>, como um abraço em forma de conteúdo.
+        </p>
+
+        <p>
+          E é dentro dessa essência que surgem os
+          <strong>minicursos da Vitis Souls</strong>: conteúdos acessíveis,
+          profundos e objetivos, voltados para quem precisa de
+          <strong>clareza interior</strong> e
+          <strong>ferramentas práticas</strong> para recomeçar.
+        </p>
+
+        <h3>Temas abordados nos minicursos:</h3>
+        <ul>
+          <li>Autoconhecimento</li>
+          <li>Cura da autoestima e das relações</li>
+          <li>Conexão com o propósito</li>
+          <li>Fortalecimento emocional</li>
+          <li>Prosperidade com consciência</li>
+        </ul>
+
+        <p>
+          Os cursos são <strong>100% online</strong>, com
+          <strong>linguagem direta e sensível</strong> e preço acessível —
+          especialmente para estudantes e professores. Em alguns casos, contam
+          ainda com <strong>material complementar exclusivo</strong>.
         </p>
       </section>
 
       <section id="duvidas" class="section" data-aos="fade-up">
         <h2><i data-feather="help-circle"></i> Contato</h2>
         <p>
-          Entre em contato:
+          Para esclarecimentos, entre em contato pelo e-mail:
           <a href="mailto:julia@vitissouls.com">
-            <span class="highlight">julia@vitissouls.com</span>
+            <span class="">julia@vitissouls.com</span>
           </a>
         </p>
       </section>

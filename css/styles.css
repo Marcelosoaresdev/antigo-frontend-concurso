@@ -11,13 +11,6 @@
   font-family: "Inter", sans-serif;
 }
 
-.highlight {
-  background-color: #f4eafa;
-  padding: 0.1rem 0.25rem;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
 body {
   background: #fff;
   color: #333;
@@ -205,6 +198,42 @@ a {
   position: relative;
 }
 
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.info-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  list-style: square;
+}
+
+.info-card p {
+  margin-bottom: 0.8rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+}
 .modal .close {
   color: #999;
   position: absolute;
@@ -261,10 +290,9 @@ form input:focus {
   outline: none;
 }
 
-form button {
+ button {
   margin-top: 20px;
   padding: 12px;
-  width: 100%;
   background-color: #7b91c7;
   color: white;
   border: none;
@@ -272,15 +300,10 @@ form button {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.4s;
 }
 
-form button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-form button:hover:not(:disabled) {
+#submit-btn:hover {
   background-color: #5c72aa;
 }
 /* Estilo do dropdown */

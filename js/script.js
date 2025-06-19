@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailInput = document.getElementById("email");
   const telefoneInput = document.getElementById("telefone");
 
+  
   // Máscara de telefone com IMask
   const mask = IMask(telefoneInput, {
     mask: "(00) 00000-0000",
