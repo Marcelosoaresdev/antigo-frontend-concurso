@@ -82,6 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "https://backend-concurso.onrender.com/create-preference",
         {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ origem: "site" }), // Pode ser qualquer coisa simples
         }
       );
 
