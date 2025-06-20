@@ -143,6 +143,10 @@ a {
   animation: fadeInUp 1s ease both;
 }
 
+#inscricao {
+  padding-bottom: 0rem;
+}
+
 .categorias-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -404,7 +408,7 @@ form input:focus {
 
 /* Estilo do dropdown */
 .dropdown-termos {
-  margin-top: 2rem;
+  margin-top: 0.8rem;
   text-align: left;
   width: 100%;
 }
