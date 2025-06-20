@@ -59,7 +59,6 @@ h2::after {
 
 h3 {
   font-size: 1.3rem;
-  margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: #444;
 }
@@ -134,33 +133,27 @@ a {
 }
 
 .categorias-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .categoria-card {
-  background: #f4f4f4;
-  border-radius: 12px;
-  padding: 1.5rem;
-  width: 280px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #eaeaea;
   cursor: pointer;
-  transition: all 0.25s ease;
-  border: 2px solid transparent;
 }
 
 .categoria-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   border-color: #69247c;
-}
-
-.categoria-card:active {
-  transform: scale(0.97);
 }
 
 .categoria-card h3 {
@@ -168,14 +161,22 @@ a {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #222;
 }
 
 .categoria-card h3 i {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   stroke-width: 2;
+}
+
+.categoria-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 .modal {
