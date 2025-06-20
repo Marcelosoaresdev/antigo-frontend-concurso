@@ -128,8 +128,8 @@
           <strong>O pagamento deve ser feito no ato da inscrição</strong> e o
           comprovante anexado ao formulário.
         </p>
-        <div>
-          <h3>IMPORTANTE!</h3>
+        <div class="alerta-inscricao">
+          <h3 id="importante"><i data-feather="alert-triangle"></i>IMPORTANTE</h3>
           <p>
             Após o pagamento, você será redirecionado para um formulário do
             Google. É
@@ -137,13 +137,14 @@
           <strong>obrigatório preenchê-lo</strong> com seus dados e comprovante
           para validar sua inscrição.
         </div>
-        <button id="submit-btn">Pagar com Mercado Pago</button>
-        <button
-          class="btn-secundario"
-          onclick="window.location.href='https://backend-concurso.onrender.com/redirect-universitario'"
-        >
-          Sou Universitário – R$ 15,00
-        </button>
+        <a href="https://backend-concurso.onrender.com/redirect-to-checkout">
+          <button class="btn-pagamento">Inscrição Geral – R$ 20</button>
+        </a>
+
+        <!-- Botão para estudantes universitários -->
+        <a href="https://backend-concurso.onrender.com/redirect-universitario">
+          <button class="btn-pagamento">Inscrição Universitária – R$ 15</button>
+        </a>
 
         <div class="dropdown-termos">
           <button class="dropdown-btn" onclick="toggleDropdown(this)">
