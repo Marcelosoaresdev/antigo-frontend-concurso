@@ -73,7 +73,6 @@ h3 {
   gap: 0.5rem;
 }
 
-
 p,
 li {
   font-size: 1.05rem;
@@ -517,6 +516,13 @@ footer img {
   margin: 0 auto;
 }
 
+.footer-columns-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  align-items: flex-start;
+}
+
 .footer-column h4 {
   color: #fff;
   font-size: 1rem;
@@ -655,6 +661,43 @@ footer img {
 
   .footer-container {
     gap: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-column:nth-child(1) {
+    width: 100%;
+  }
+
+  /* Novo container interno para as colunas 2 e 3 */
+  .footer-columns-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footer-columns-row .footer-column {
+    width: 45%;
+    min-width: 120px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  .footer-column ul {
+    padding: 0;
   }
 }
 
