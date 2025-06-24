@@ -49,7 +49,7 @@
         <p><strong>Tópicos da competição:</strong></p>
         <ul class="nav-list">
           <li><a href="#sobre">O que é a Competição</a></li>
-          <li><a href="#inscricao">Taxas e Regras</a></li>
+          <li><a href="#inscricao">Inscrição</a></li>
           <li><a href="#marca">Sobre a Vitis Souls</a></li>
           <li><a href="#objetivo">Objetivo dos Conteúdos</a></li>
           <li><a href="#categorias">Categorias da Competição</a></li>
@@ -129,7 +129,7 @@
       </section>
 
       <section id="inscricao" class="section" data-aos="fade-up">
-        <h2><i data-feather="dollar-sign"></i> Taxa de Inscrição</h2>
+        <h2><i data-feather="dollar-sign"></i> Faça sua Inscrição</h2>
         <p>
           <strong>Estudantes universitários:</strong>
           <span>R$ 15,00</span> (com matrícula)
@@ -148,19 +148,73 @@
           </h3>
           <p>
             Após o pagamento, você será redirecionado para um formulário do
-            Google. É
+            Google. É <strong>obrigatório preenchê-lo</strong> com seus dados e
+            comprovante para validar sua inscrição.
           </p>
-          <strong>obrigatório preenchê-lo</strong> com seus dados e comprovante
-          para validar sua inscrição.
         </div>
-        <a href="https://backend-concurso.onrender.com/redirect-to-checkout">
-          <button class="btn-pagamento">Inscrição Geral – R$ 20</button>
-        </a>
 
-        <!-- Botão para estudantes universitários -->
-        <a href="https://backend-concurso.onrender.com/redirect-universitario">
-          <button class="btn-pagamento">Inscrição Universitária – R$ 15</button>
-        </a>
+        <div class="planos-slider-container">
+          <div class="planos-container">
+            <div class="planos-slider">
+              <!-- Plano 1 -->
+              <div class="plano-card">
+                <div class="tag-economia">R$ 20,00</div>
+                <h3>1 Categoria</h3>
+                <p class="preco">R$ 15,00</p>
+                <p class="descricao">
+                  Escolha uma categoria e concorra a
+                  <strong>R$ 1.000</strong> com sua melhor ideia!
+                </p>
+                <a
+                  href="https://backend-concurso.onrender.com/pagar-1-categoria"
+                >
+                  <button class="btn-plano">Escolher</button>
+                </a>
+              </div>
+
+              <!-- Plano 2 -->
+              <div class="plano-card popular">
+                <div class="tag-topo">MAIS POPULAR</div>
+                <div class="tag-economia">R$ 30,00</div>
+                <h3>2 Categorias</h3>
+                <p class="preco">R$ 25,00</p>
+                <p class="descricao">
+                  Dobre suas chances com duas categorias e concorra a
+                  <strong>R$ 2.000</strong>!
+                </p>
+                <a
+                  href="https://backend-concurso.onrender.com/pagar-2-categorias"
+                >
+                  <button class="btn-plano">Escolher</button>
+                </a>
+              </div>
+
+              <!-- Plano 3 -->
+              <div class="plano-card recomendado">
+                <div class="tag-topo">RECOMENDADO</div>
+                <div class="tag-economia">R$ 40,00</div>
+                <h3>3 Categorias</h3>
+                <p class="preco">R$ 35,00</p>
+                <p class="descricao">
+                  Garanta presença total em todas as categorias e concorra a
+                  <strong>R$ 3.000</strong> em dinheiro!
+                </p>
+                <a
+                  href="https://backend-concurso.onrender.com/pagar-3-categorias"
+                >
+                  <button class="btn-plano">Escolher</button>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bolinhas do carrossel -->
+            <div class="slider-dots">
+              <span class="dot active" onclick="moveSlide(0)"></span>
+              <span class="dot" onclick="moveSlide(1)"></span>
+              <span class="dot" onclick="moveSlide(2)"></span>
+            </div>
+          </div>
+        </div>
 
         <div class="dropdown-termos">
           <button class="dropdown-btn" onclick="toggleDropdown(this)">
