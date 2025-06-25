@@ -1,0 +1,46 @@
+      <section id="categorias" class="section" data-aos="fade-up">
+        <h2><i data-feather="layers"></i> Categorias da Competição</h2>
+        <div class="categorias-cards">
+          <!-- Card Reels -->
+          <div class="categoria-card" onclick="abrirModal('reels')">
+            <h3><i data-feather="video"></i><span>Reels</span></h3>
+            <p>
+              Vídeo curto com narrativa emocional para divulgação dos
+              minicursos.
+            </p>
+          </div>
+
+          <!-- Card Pitch -->
+          <div class="categoria-card" onclick="abrirModal('pitch')">
+            <h3><i data-feather="mic"></i><span>Pitch de Vendas</span></h3>
+            <p>Proposta criativa de venda em formato de vídeo argumentativo.</p>
+          </div>
+
+          <!-- Card Designer -->
+          <div class="categoria-card" onclick="abrirModal('designer')">
+            <h3><i data-feather="image"></i><span>Designer</span></h3>
+            <p>
+              Peça visual com foco em conexão emocional e identidade da marca.
+            </p>
+          </div>
+        </div>
+
+        <div class="btn-download-wrapper" data-aos="fade-up">
+          <a
+            href="https://drive.google.com/drive/folders/1rZ_5ZquL9I8OE3H-Ddl7obTG7FzMq9yP?usp=sharing"
+            target="_blank"
+            class="btn-download"
+          >
+            <i data-feather="download"></i> Baixar Kit de Materiais da Vitis
+            Souls
+          </a>
+        </div>
+
+        <!-- Modal base -->
+        <div id="modal-categoria" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <div id="modal-texto"></div>
+          </div>
+        </div>
+      </section>
