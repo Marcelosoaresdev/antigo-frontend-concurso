@@ -53,3 +53,8 @@ function initSlider() {
 
 document.addEventListener("DOMContentLoaded", initSlider);
 document.addEventListener("componentsLoaded", initSlider);
+
+  document.querySelectorAll('.plano-card').forEach(card => {
+    card.classList.add('animate__animated', 'animate__fadeInUp');
+  });
+
