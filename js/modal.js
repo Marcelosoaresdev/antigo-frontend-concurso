@@ -4,7 +4,7 @@ const conteudosCategoria = {
     <p><strong>Objetivo:</strong> Criar um vídeo curto (Reel) com foco na venda dos minicursos da Vitis Souls.</p>
     <p><strong>Requisitos:</strong></p>
     <ul>
-      <li>Duração entre 30 segundos e 1 minuto.</li>
+      <li>Duração entre 30 segundos a 1 minuto.</li>
       <li>Formatos aceitos: .mp4, .mov ou .avi.</li>
       <li>Utilizar os materiais obrigatórios fornecidos pela organização após a inscrição.</li>
       <li>Não utilizar bancos de imagens ou vídeos externos (vídeos reutilizados de outras pessoas em demais redes sociais).</li>
