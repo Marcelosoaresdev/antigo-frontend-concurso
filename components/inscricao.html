@@ -1,127 +1,108 @@
-      <section id="inscricao" class="section" data-aos="fade-up">
-        <h2><i data-feather="dollar-sign"></i> Faça sua Inscrição</h2>
-        <p>
-          <strong>Estudantes universitários:</strong>
-          <span>R$ 15,00</span> (com matrícula)
-        </p>
-        <p>
-          <strong>Demais participantes:</strong>
-          <span>R$ 20,00</span>
-        </p>
-        <p>
-          <strong>O pagamento deve ser feito no ato da inscrição</strong> e o
-          comprovante anexado ao formulário.
-        </p>
-        <div class="alerta-inscricao">
-          <h3 id="importante">
-            <i data-feather="alert-triangle"></i>IMPORTANTE
-          </h3>
-          <p>
-            Após o pagamento, você será redirecionado para um formulário do
-            Google. É <strong>obrigatório preenchê-lo</strong> com seus dados e
-            comprovante para validar sua inscrição.
+<section id="inscricao" class="section" data-aos="fade-up">
+  <h2><i data-feather="dollar-sign"></i> Faça sua Inscrição</h2>
+  <p>
+    <strong>O pagamento deve ser feito no ato da inscrição</strong> e o
+    comprovante anexado ao formulário.
+  </p>
+
+  <div class="planos-slider-container">
+    <div class="planos-container">
+      <div class="planos-slider">
+        <!-- Plano 1 -->
+        <div class="plano-card">
+          <div class="tag-economia">R$ 20,00</div>
+          <h3>1 Categoria</h3>
+          <p class="preco">R$ 15,00</p>
+          <p class="descricao">
+            Escolha uma categoria e concorra a
+            <strong>R$ 1.000</strong> com sua melhor ideia!
           </p>
+          <a href="https://backend-concurso.onrender.com/pagar-1-categoria">
+            <button class="btn-plano">Escolher</button>
+          </a>
         </div>
 
-        <div class="planos-slider-container">
-          <div class="planos-container">
-            <div class="planos-slider">
-              <!-- Plano 1 -->
-              <div class="plano-card">
-                <div class="tag-economia">R$ 20,00</div>
-                <h3>1 Categoria</h3>
-                <p class="preco">R$ 15,00</p>
-                <p class="descricao">
-                  Escolha uma categoria e concorra a
-                  <strong>R$ 1.000</strong> com sua melhor ideia!
-                </p>
-                <a
-                  href="https://backend-concurso.onrender.com/pagar-1-categoria"
-                >
-                  <button class="btn-plano">Escolher</button>
-                </a>
-              </div>
-
-              <!-- Plano 2 -->
-              <div class="plano-card popular">
-                <div class="tag-topo">MAIS POPULAR</div>
-                <div class="tag-economia">R$ 30,00</div>
-                <h3>2 Categorias</h3>
-                <p class="preco">R$ 25,00</p>
-                <p class="descricao">
-                  Dobre suas chances com duas categorias e concorra a
-                  <strong>R$ 2.000</strong>!
-                </p>
-                <a
-                  href="https://backend-concurso.onrender.com/pagar-2-categorias"
-                >
-                  <button class="btn-plano">Escolher</button>
-                </a>
-              </div>
-
-              <!-- Plano 3 -->
-              <div class="plano-card recomendado">
-                <div class="tag-topo">RECOMENDADO</div>
-                <div class="tag-economia">R$ 40,00</div>
-                <h3>3 Categorias</h3>
-                <p class="preco">R$ 35,00</p>
-                <p class="descricao">
-                  Garanta presença total em todas as categorias e concorra a
-                  <strong>R$ 3.000</strong> em dinheiro!
-                </p>
-                <a
-                  href="https://backend-concurso.onrender.com/pagar-3-categorias"
-                >
-                  <button class="btn-plano">Escolher</button>
-                </a>
-              </div>
-            </div>
-
-            <!-- Bolinhas do carrossel -->
-            <div class="slider-dots">
-              <span class="dot active" onclick="moveSlide(0)"></span>
-              <span class="dot" onclick="moveSlide(1)"></span>
-              <span class="dot" onclick="moveSlide(2)"></span>
-            </div>
-          </div>
+        <!-- Plano 2 -->
+        <div class="plano-card popular">
+          <div class="tag-topo">MAIS POPULAR</div>
+          <div class="tag-economia">R$ 30,00</div>
+          <h3>2 Categorias</h3>
+          <p class="preco">R$ 25,00</p>
+          <p class="descricao">
+            Dobre suas chances com duas categorias e concorra a
+            <strong>R$ 2.000</strong>!
+          </p>
+          <a href="https://backend-concurso.onrender.com/pagar-2-categorias">
+            <button class="btn-plano">Escolher</button>
+          </a>
         </div>
 
-        <div class="dropdown-termos">
-          <button class="dropdown-btn" onclick="toggleDropdown(this)">
-            <span class="icon">></span> Termos e Condições
-          </button>
-          <div id="dropdown-conteudo" class="dropdown-content">
-            <h4>
-              <i data-feather="image"></i> Direitos de Uso de Imagem e Conteúdo
-            </h4>
-            <p>
-              Ao se inscrever na Competição Vitis Souls, o participante autoriza
-              automaticamente o uso de sua imagem, voz e material inscrito (seja
-              vídeo, arte, texto ou pitch de vendas) pela marca Vitis Souls para
-              fins promocionais e institucionais. Esse uso poderá ocorrer em
-              plataformas digitais, eventos físicos, apresentações ou materiais
-              de divulgação, sempre sem fins lucrativos e respeitando os devidos
-              créditos autorais.
-            </p>
-
-            <h4><i data-feather="edit-2"></i> Declaração de autoria</h4>
-            <p>
-              O participante declara que o conteúdo inscrito é de sua total
-              autoria, isentando a organização de qualquer responsabilidade por
-              possíveis infrações relacionadas a direitos autorais, uso de
-              imagem ou reprodução indevida de conteúdo de terceiros.
-            </p>
-
-            <h4><i data-feather="award"></i> Critério de Desempate</h4>
-            <p>
-              Em caso de empate técnico ou numérico entre dois ou mais
-              participantes — considerando visualizações, curtidas, comentários
-              e compartilhamentos —, o critério de desempate será o alinhamento
-              mais sensível, criativo e verdadeiro com os valores da marca. A
-              decisão será feita por uma banca avaliadora interna da Vitis
-              Souls, levando em conta aspectos emocionais, autenticidade e
-              impacto do conteúdo.
-            </p>
-          </div>
+        <!-- Plano 3 -->
+        <div class="plano-card recomendado">
+          <div class="tag-topo">RECOMENDADO</div>
+          <div class="tag-economia">R$ 40,00</div>
+          <h3>3 Categorias</h3>
+          <p class="preco">R$ 35,00</p>
+          <p class="descricao">
+            Garanta presença total em todas as categorias e concorra a
+            <strong>R$ 3.000</strong> em dinheiro!
+          </p>
+          <a href="https://backend-concurso.onrender.com/pagar-3-categorias">
+            <button class="btn-plano">Escolher</button>
+          </a>
         </div>
-      </section>
+      </div>
+
+      <!-- Bolinhas do carrossel -->
+      <div class="slider-dots">
+        <span class="dot active" onclick="moveSlide(0)"></span>
+        <span class="dot" onclick="moveSlide(1)"></span>
+        <span class="dot" onclick="moveSlide(2)"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="alerta-inscricao">
+    <h3 id="importante"><i data-feather="alert-triangle"></i>IMPORTANTE</h3>
+    <p>
+      Após o pagamento, você será redirecionado para um formulário do Google. É
+      <strong>obrigatório preenchê-lo</strong> com seus dados e comprovante para
+      validar sua inscrição.
+    </p>
+  </div>
+
+  <div class="dropdown-termos">
+    <button class="dropdown-btn" onclick="toggleDropdown(this)">
+      <span class="icon">></span> Termos e Condições
+    </button>
+    <div id="dropdown-conteudo" class="dropdown-content">
+      <h4><i data-feather="image"></i> Direitos de Uso de Imagem e Conteúdo</h4>
+      <p>
+        Ao se inscrever na Competição Vitis Souls, o participante autoriza
+        automaticamente o uso de sua imagem, voz e material inscrito (seja
+        vídeo, arte, texto ou pitch de vendas) pela marca Vitis Souls para fins
+        promocionais e institucionais. Esse uso poderá ocorrer em plataformas
+        digitais, eventos físicos, apresentações ou materiais de divulgação,
+        sempre sem fins lucrativos e respeitando os devidos créditos autorais.
+      </p>
+
+      <h4><i data-feather="edit-2"></i> Declaração de autoria</h4>
+      <p>
+        O participante declara que o conteúdo inscrito é de sua total autoria,
+        isentando a organização de qualquer responsabilidade por possíveis
+        infrações relacionadas a direitos autorais, uso de imagem ou reprodução
+        indevida de conteúdo de terceiros.
+      </p>
+
+      <h4><i data-feather="award"></i> Critério de Desempate</h4>
+      <p>
+        Em caso de empate técnico ou numérico entre dois ou mais participantes —
+        considerando visualizações, curtidas, comentários e compartilhamentos —,
+        o critério de desempate será o alinhamento mais sensível, criativo e
+        verdadeiro com os valores da marca. A decisão será feita por uma banca
+        avaliadora interna da Vitis Souls, levando em conta aspectos emocionais,
+        autenticidade e impacto do conteúdo.
+      </p>
+    </div>
+  </div>
+</section>

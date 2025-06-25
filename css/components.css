@@ -1,3 +1,4 @@
+.nav-list {
   list-style: none;
   margin-top: 0.5rem;
   padding: 0;
@@ -433,7 +434,7 @@ footer img {
 }
 
 .recomendado .tag-topo {
-  background-color: #4e1a5c;
+  background-color: #69247c;
 }
 
 .tag-economia {
