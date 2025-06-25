@@ -97,10 +97,10 @@ a {
 }
 
 .hero {
-  background: url("/assets/imgs/1905x331.png") no-repeat center/cover;
+  background: url("/assets/imgs/competicaoVitisSouls.png") no-repeat center/cover;
   color: #fff;
   text-align: center;
-  padding: 6rem 2rem 4rem;
+  min-height: 300px;
 }
 
 .hero h1,

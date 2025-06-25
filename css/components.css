@@ -517,7 +517,8 @@ footer img {
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url("/assets/imgs/430x392px.png");
+    background-image: url("/assets/imgs/competVitisCel.png");
+    min-height: 350px;
   }
 
   .section {
