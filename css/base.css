@@ -96,11 +96,8 @@ a {
   font-weight: 500;
 }
 
-.hero {
-  background: url("/assets/imgs/competicaoVitisSouls.png") no-repeat center/cover;
-  color: #fff;
-  text-align: center;
-  min-height: 300px;
+.banner-img {
+  width: 100%;
 }
 
 .hero h1,

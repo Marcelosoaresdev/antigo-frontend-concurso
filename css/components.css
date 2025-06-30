@@ -516,9 +516,8 @@ footer img {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    background-image: url("/assets/imgs/competVitisCel.png");
-    min-height: 350px;
+  .banner-img {
+    content: url("/assets/imgs/C_COMPETIÇÃO_VITIS_SOULS_\(430x\ 392px\).png");
   }
 
   .section {
